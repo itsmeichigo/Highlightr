@@ -55,7 +55,7 @@ open class Highlightr
 
         let bundle = Bundle(for: Highlightr.self)
         self.bundle = bundle
-        guard let hgPath = highlightPath ?? bundle.path(forResource: "highlight.min", ofType: "js") else
+        guard let hgPath = highlightPath ?? bundle.path(forResource: "highlight", ofType: "js") else
         {
             return nil
         }
